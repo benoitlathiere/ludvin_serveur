@@ -1,0 +1,35 @@
+<h3><a id="contenu">Pr&eacute;sentation du projet</a></h3>
+<p>L’int&eacute;gration des personnes handicap&eacute;es constitue l’un des enjeux de nos soci&eacute;t&eacute;s. En
+France, la loi du 11 f&eacute;vrier 2005 pour l'&eacute;galit&eacute; des droits et des chances affirme le principe
+d'accessibilit&eacute; pour tous. Dans ce contexte, le projet LUD’VIN contribue au d&eacute;veloppement
+d’un syst&egrave;me de localisation destin&eacute; aux personnes ayant un handicap visuel &agrave; l’int&eacute;rieur
+d’un b&acirc;timent au pr&eacute;alable cartographi&eacute;.</p>
+<p>Ce projet est destin&eacute; aux personnes aveugles ou malvoyantes mais &eacute;galement &agrave; toute
+personne valide qui souhaite se localiser dans un b&acirc;timent.</p>
+<p>Nous avons d&eacute;velopp&eacute; un ensemble d’applications sous Android pour aider la personne
+d&eacute;ficiente visuelle &agrave; se rep&eacute;rer &agrave; l’int&eacute;rieur d’un b&acirc;timent. La personne saura ainsi facilement
+dans quel endroit du b&acirc;timent elle se trouve (&eacute;tage, salle, couloir, escalier, ...) et quels sont
+les points d’int&eacute;r&ecirc;t proches d’elle (toilettes, porte, sortie, ...).</p>
+<p>Pour permettre cela, le syst&egrave;me est d&eacute;compos&eacute; en trois parties :</p>
+<ol>
+<li> Une application destin&eacute;e au public cible est install&eacute;e sur leur appareil mobile. Le
+   visiteur qui souhaite connaître sa position et les zones et points d’int&eacute;r&ecirc;t alentour
+       lance l’application qui va interroger le serveur. L'information est &agrave; la fois visuelle et
+         auditive.</li>
+<li> Une autre application mobile sera utilis&eacute;e par une personne valide pour cartographier
+  les diff&eacute;rentes parties d’un b&acirc;timent que l’on veut rendre accessible au public cible.
+       Le cartographe renseigne les b&acirc;timents et &eacute;tages, puis quadrille les lieux pour
+        r&eacute;f&eacute;rencer les zones et points d'int&eacute;r&ecirc;t devant &ecirc;tre accessibles. Un plan sert de
+            rep&egrave;re au quadrillage et &agrave; la localisation.</li>
+<li>Un serveur stocke les r&eacute;f&eacute;rences des lieux cartographi&eacute;s et calcule la localisation
+    d’un visiteur par comparaison des puissances des signaux reçus par l’appareil mobile
+        du visiteur avec sa base de connaissance. Le plan des &eacute;tages permet de calculer les
+        zones et points d'int&eacute;r&ecirc;t &agrave; proximit&eacute; du visiteur.</li>
+</ol>
+<p>La solution technique consiste &agrave; utiliser la puissance du signal des bornes Wi-Fi
+environnantes pour d&eacute;limiter et r&eacute;f&eacute;rencer des zones et points d’int&eacute;r&ecirc;t. On part du principe
+que deux positions diff&eacute;rentes ne reçoivent pas les m&ecirc;mes forces pour l’ensemble des
+bornes Wi-Fi d&eacute;tect&eacute;es. Afin d’&eacute;viter les probl&egrave;mes de fluctuation de signal, seule la valeur
+moyenne de la puissance du signal (obtenue sur une p&eacute;riode de quelques secondes) sera
+retenue dans le r&eacute;f&eacute;rencement et la localisation.</p>
+

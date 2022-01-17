@@ -1,0 +1,7 @@
+# Python .py config
+
+AddHandler mod_python .py
+PythonHandler mod_python.publisher | .py
+#PythonHandler mod_python.cgihandler
+PythonDebug On
+
